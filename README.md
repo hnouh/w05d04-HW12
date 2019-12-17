@@ -2,15 +2,16 @@
 
 ### Do the Following
 1. **[CD to your rails Book app] (The one we did in the lab)** in the terminal `cd book_app`
-2. **[Create a new repository]** Oben your github account and create a new repository and call it book_app
+2. **[Create a new repository]** Open your github account and create a new repository and call it book_app
 3. **[Initialize the repository] (Follow repository steps)**
 
 ```Bash
 echo "# Book_app" >> README.md
 git init
 git add README.md
+git add .
 git commit -m "first commit"
-git remote add origin https://github.com/daghustani/Book_app.git //your github repo link
+git remote add origin https://github.com/sarah/Book_app.git //your github repo link
 git push -u origin master
 ```
 
@@ -27,17 +28,18 @@ end
 ```bash
 default: &default
   adapter: mysql2
-  encoding: utf8mb4 #change inside this code the encoding to `encoding:utf8`
+  encoding: utf8mb4 #change inside this code the encoding to encoding:utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
   socket: /tmp/mysql.sock
 ```
-7. **[bundle]:** In the terminal `bundle`
+7. **[For windows user]** run `gem install bundler` and Run the bundle comman In the terminal `bundle`
+7. **[For Mac user]:** Run the bundle comman In the terminal `bundle`
 8. **[Push it in github]:(Follow steps)** 
 
 ```Bash
-git add .
-git commit -m 
+git add . // For Windows if you get warning LF will be replaced by CRLF in Gemfile rerun the command again
+git commit -m "add new gem"
 git push origin master 
 ```
 
@@ -45,12 +47,12 @@ git push origin master
 10. **[Create a new app in Heroku]:** In Heroku website create a new app after signing up. Make sure you (Add an app name and choose Europe as a region)
 
 11. **[Download and install the Heroku CLI]:**(https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
-12.**[Follow Heroku steps]:**
+12.**[Follow Heroku steps Command]:**for Windows user user Visual Studio termial 
 
 ```bash
 heroku login
 heroku git:clone -a appName # The appname you created in Heroku
-cd appName #To the appname you created in Heroku
+heroku git:remote -a appName # The appname you created in Heroku
 git add .
 git commit -am "make it better"
 git push heroku master
