@@ -1,9 +1,10 @@
 # Heroku with Rails Homework HW12
 
 ### Do the Following
-1. cd to your book_app (The one we did in the lab)
-2. Create a new repository and call it book_app
-3. Follow the steps: to your book_app
+1. **[CD to your rails Book app] (The one we did in the lab)** in the terminal `cd book_app`
+2. **[Create a new repository]** Oben your github account and create a new repository and call it book_app
+3. **[Initialize the repository] (Follow repository steps)**
+
 ```Bash
 echo "# Book_app" >> README.md
 git init
@@ -12,15 +13,63 @@ git commit -m "first commit"
 git remote add origin https://github.com/daghustani/Book_app.git
 git push -u origin master
 ```
-4. Create an account in Heroku: (https://signup.heroku.com/devcenter)
-5. Install the Heroku CLI on your development machine: (https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
-6. Read Heroku Deployment Rails Guides: (https://devcenter.heroku.com/articles/getting-started-with-rails6#deploy-your-application-to-heroku) 
-7. Follow Heroku Deployment Steps and upload your rails Book_App to Heroku Server.
+
+4. **[Open the book_app]:** In the terminal `code .`
+5. **[Go to Gemfile in Rails app]:** Add this in the end.  
+
+```Bash
+group :production do
+  gem 'pg'
+end
+```
+
+6. **[Go to config/database.yml]:** change inside this code the encoding to `encoding:utf8`
+```bash
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4 #change inside this code the encoding to `encoding:utf8`
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  socket: /tmp/mysql.sock
+```
+
+
+7. **[bundle]:** In the terminal `bundle`
+8. **[Push it in github]:(Follow steps)** 
+
+```Bash
+git add .
+git commit -m 
+git push origin master 
+```
+
+9. **[Create an account in Heroku]:(Follow steps)**(https://signup.heroku.com/devcenter)
+10. **[Create a new app in Heroku]:** In Heroku website create a new app after signing up. Makke sure you (Add a app name and choose Europe as a region)
+
+11.**[Download and install the Heroku CLI]:** (https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
+12.**[Follow Heroku steps]:**
+```bash
+heroku login
+heroku git:clone -a hw12book
+cd appName // to the appname you created in Heroku
+git add .
+git commit -am "make it better"
+git push heroku master
+```
+13.**[Open your Heroku website]:** go to your app name
+14 **[Click More]** on the right hand side of the page next to Open app button.
+15 **[Run Console]** go to Run Console
+17 **[In Heroku Console] (Follow this steps)** 
+
+```bash
+bundle
+db:migrate
+```
+
 
 ### After Finishing the Previous Steps Do the Following
 1. Fork this Repo
 2. Add the Link
-3. Walk us through the setps for Deploying a rails app in Heroku.
 4. Do a Pull Request
 
 
