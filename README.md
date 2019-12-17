@@ -1,7 +1,7 @@
 # Heroku with Rails Homework HW12
 
 ### Do the Following
-1. cd to your book_app 
+1. Cd to your book_app 
 2. Create a new repository and call it book_app (The one we did in the lab)
 3. Follow the steps: to your book_app
 ```Bash
