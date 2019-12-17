@@ -10,7 +10,7 @@ echo "# Book_app" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/daghustani/Book_app.git
+git remote add origin https://github.com/daghustani/Book_app.git //your github repo link
 git push -u origin master
 ```
 
@@ -32,8 +32,6 @@ default: &default
   username: root
   socket: /tmp/mysql.sock
 ```
-
-
 7. **[bundle]:** In the terminal `bundle`
 8. **[Push it in github]:(Follow steps)** 
 
@@ -44,32 +42,33 @@ git push origin master
 ```
 
 9. **[Create an account in Heroku]:(Follow steps)**(https://signup.heroku.com/devcenter)
-10. **[Create a new app in Heroku]:** In Heroku website create a new app after signing up. Makke sure you (Add a app name and choose Europe as a region)
+10. **[Create a new app in Heroku]:** In Heroku website create a new app after signing up. Make sure you (Add an app name and choose Europe as a region)
 
-11.**[Download and install the Heroku CLI]:** (https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
+11. **[Download and install the Heroku CLI]:**(https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
 12.**[Follow Heroku steps]:**
+
 ```bash
 heroku login
-heroku git:clone -a hw12book
-cd appName // to the appname you created in Heroku
+heroku git:clone -a appName # The appname you created in Heroku
+cd appName #To the appname you created in Heroku
 git add .
 git commit -am "make it better"
 git push heroku master
 ```
-13.**[Open your Heroku website]:** go to your app name
-14 **[Click More]** on the right hand side of the page next to Open app button.
-15 **[Run Console]** go to Run Console
-17 **[In Heroku Console] (Follow this steps)** 
+
+13. **[Open your Heroku website]:** go to your app name
+14. **[Click More]** on the right hand side of the page next to Open app button.
+15. **[Run Console]** go to Run Console
+17. **[In Heroku Console] (Follow this steps)** 
 
 ```bash
 bundle
 db:migrate
 ```
 
-
-### After Finishing the Previous Steps Do the Following
-1. Fork this Repo
-2. Add the Link
+### After Finishing the Previous Steps Do the Following in this repo
+1. Fork this Repo 
+2. Add the Link of the Heroku website
 4. Do a Pull Request
 
 
