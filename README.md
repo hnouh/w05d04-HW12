@@ -1,5 +1,9 @@
 # Heroku with Rails Homework HW12
 
+## Fisrt
+### Add Bootstap to your Book_app
+
+## Second
 ### Do the Following
 1. **[CD to your rails Book app] (The one we did in the lab)** in the terminal `cd book_app`
 2. **[Create a new repository]** Open your github account and create a new repository and call it book_app
