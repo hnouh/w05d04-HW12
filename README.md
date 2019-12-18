@@ -79,7 +79,7 @@ rails db:seed
 
 ### After Finishing the Previous Steps Do the Following in this repo
 1. Fork this Repo 
-2. Add the Link of your book_app Heroku website
+2. Add the Link of your book_app Heroku website and your repo github 
 4. Do a Pull Request
 5. Please add your Project Idea: (https://docs.google.com/spreadsheets/d/1-sbz4FfsvwwU1PMg3wsVa9zpdf2RCYPSUvAmlkG4Dcw/edit#gid=0)
 
