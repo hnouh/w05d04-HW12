@@ -43,7 +43,7 @@ default: &default
 8. **[Push it in github] (Follow steps)** 
 
 ```Bash
-git add . // For Windows if you get "warning LF will be replaced by CRLF in Gemfile" Rerun the command again
+git add . # For Windows if you get "warning LF will be replaced by CRLF in Gemfile" Rerun the command again
 git commit -m "add new gem"
 git push origin master 
 ```
@@ -59,7 +59,7 @@ heroku login
 heroku git:clone -a appName # The appname you created in Heroku
 heroku git:remote -a appName # The appname you created in Heroku
 git add .
-git commit -am "make it better" // If everything is up to date
+git commit -am "make it better" # If everything is up to date
 git push heroku master
 ```
 
