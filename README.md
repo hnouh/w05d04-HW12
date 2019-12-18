@@ -81,5 +81,5 @@ rails db:seed
 1. Fork this Repo 
 2. Add the Link of your book_app Heroku website
 4. Do a Pull Request
-
+5. Please add your Project Idea: (https://docs.google.com/spreadsheets/d/1-sbz4FfsvwwU1PMg3wsVa9zpdf2RCYPSUvAmlkG4Dcw/edit#gid=0)
 
